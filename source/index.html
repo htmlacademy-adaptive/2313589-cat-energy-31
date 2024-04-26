@@ -42,7 +42,11 @@
       <div class="hero__wrapper">
         <h1 class="hero__title title title--primary">Функциональное питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
-        <img class="hero__image" width="280" height="270" src="images/hero.png" alt="Функциональное питание Кэт Энерджи со вкусом курицы">
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/index/hero-desctop@1x.png 1x, images/index/hero-desctop@2x.png 2x">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/index/hero-tablet@1x.png 1x, images/index/hero-tablet@2x.png 2x">
+          <img class="hero__image" width="280" height="270" src="images/index/hero-mobile@1x.png" srcset="images/index/hero-mobile@2x.png 2x" alt="Функциональное питание Кэт Энерджи со вкусом курицы">
+        </picture>
         <a class="hero__button button button--primary" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -105,8 +109,17 @@
           </div>
         </dl>
         <div class="slider">
-          <img class="slider__image" width="140" height="256" src="images/cat-fat.png" alt="Кот с лишним весом">
-          <img class="slider__image" width="140" height="256" src="images/cat-skinny.png" alt="Кот стройного телосложения">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/slider/cat-before-tablet@1x.png 1x, images/slider/cat-before-tablet@2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/slider/cat-before-tablet@1x.png 1x, images/slider/cat-before-tablet@2x.png 2x">
+            <img class="slider__image" width="140" height="256" src="images/slider/cat-before-mobile@1x.png" srcset="images/slider/cat-before-mobile@2x.png 2x" alt="Кот с лишним весом">
+          </picture>
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/slider/cat-after-tablet@1x.png 1x, images/slider/cat-after-tablet@2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/slider/cat-after-tablet@1x.png 1x, images/slider/cat-after-tablet@2x.png 2x">
+            <img class="slider__image" width="140" height="256" src="images/slider/cat-after-mobile@1x.png" srcset="images/slider/cat-after-mobile@2x.png 2x" alt="Кот стройного телосложения">
+          </picture>
+          <!--Верно ли разбить слайдер на 2 тэга пикчер?-->
           <button class="slider__change-image" type="button">
             <span class="visually-hidden">Ползунок для смены изображения.</span></button>
         </div>
@@ -119,7 +132,11 @@
         <address class="invite__address">
           <p class="invite__text">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </address>
-        <img class="invite__map" width="320" height="362" src="images/map.png" alt="Карта с местоположением офиса Кэт энерджи">
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/map/map-desctop@1x.png 1x, images/map/map-desctop@2x.png 2x">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
+          <img class="invite__map" width="320" height="362" src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" alt="Карта с местоположением офиса Кэт энерджи">
+        </picture>
       </div>
     </section>
   </main>
@@ -134,7 +151,7 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social-link social-link--vk" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Вконтакте</span>
+                <span class="visually-hidden">Вконтакте.</span>
               </a>
             </li>
             <li class="social__item">
