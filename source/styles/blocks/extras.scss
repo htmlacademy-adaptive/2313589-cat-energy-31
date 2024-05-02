@@ -1,0 +1,30 @@
+.extras {
+  @include list-reset;
+}
+
+.extras__item {
+  //comments
+}
+
+.extras__caption {
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.extras__features {
+  margin: 0;
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 14px;
+  color: $text-secondary;
+}
+
+.extras__value {
+  margin: 0;
+}
+
+.extras__price {
+  margin: 0;
+}

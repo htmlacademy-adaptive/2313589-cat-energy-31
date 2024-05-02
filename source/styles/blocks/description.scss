@@ -1,0 +1,79 @@
+.description {
+  //comments
+}
+
+.description__wrapper {
+  //comments
+}
+
+.description__title {
+  margin: 0;
+}
+
+.description__list {
+  @include list-reset;
+}
+
+.description__item {
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+
+  &--healthy {
+    background-image: url("../../img/healthy-icon.svg");
+  }
+
+  &--simple {
+    background-image: url("../../img/simple-icon.svg");
+  }
+
+  &--tasty {
+    background-image: url("../../img/tasty-icon.svg");
+  }
+
+  &--fast {
+    background-image: url("../../img/fast-icon.svg");
+  }
+}
+
+.description__text {
+  margin: 0;
+  font-family: $font-primary;
+  color: $text-secondary;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--healthy::before {
+    background-image: url("../../icons/index/healthy-icon.svg");
+  }
+
+  &--simple::before {
+    background-image: url("../../icons/index/simple-icon.svg");
+  }
+
+  &--tasty::before {
+    background-image: url("../../icons/index/tasty-icon.svg");
+  }
+
+  &--fast::before {
+    background-image: url("../../icons/index/fast-icon.svg");
+  }
+}
+
+.description__text--healthy {
+  //comments
+}
+
+.description__text--tasty {
+  //comments
+}
+
+.description__text--fast {
+  //comments
+}

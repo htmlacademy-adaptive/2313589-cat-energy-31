@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicons/apple.png"> <!-- 180×180 -->
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -18,7 +18,7 @@
     <a class="header__logo site-logo" href="#">
       <img src="images/logo.svg" width="33" height="38" aria-hidden="true" alt="Логотип Кэт энерджи">
     </a>
-    <nav class=" header-navigation navigation">
+    <nav class="header-navigation navigation">
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
@@ -37,7 +37,7 @@
       </div>
     </nav>
   </header>
-  <main class="page-content">
+  <main class="page__content">
     <section class="hero">
       <div class="hero__wrapper">
         <h1 class="hero__title title title--primary">Функциональное питание для котов</h1>
@@ -55,17 +55,17 @@
         <h2 class="visually-hidden">Каталог программ Кэт энерджи</h2>
         <ul class="programs__list">
           <li class="programs__item program">
-            <h3 class="program__title title title--slim">Похудение</h3>
+            <h3 class="program__title program__title--slim">Похудение</h3>
             <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="programs__link" href="catalog.html">Каталог Slim
+            <a class="program__link" href="catalog.html">Каталог Slim
             </a>
           </li>
           <li class="programs__item program">
-            <h3 class="program__title title title--pro">Набор массы</h3>
+            <h3 class="program__title program__title--pro">Набор массы</h3>
             <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="programs__link" href="catalog.html">Каталог Pro
+            <a class="program__link" href="catalog.html">Каталог Pro
             </a>
           </li>
         </ul>
@@ -119,7 +119,6 @@
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/cat-after-tablet@1x.png 1x, images/slider/cat-after-tablet@2x.png 2x">
             <img class="slider__image" width="140" height="256" src="images/slider/cat-after-mobile@1x.png" srcset="images/slider/cat-after-mobile@2x.png 2x" alt="Кот стройного телосложения">
           </picture>
-          <!--Верно ли разбить слайдер на 2 тэга пикчер?-->
           <button class="slider__change-image" type="button">
             <span class="visually-hidden">Ползунок для смены изображения.</span></button>
         </div>
@@ -143,7 +142,7 @@
   <footer class="footer">
     <div class="footer__wrapper">
       <a class="footer__logo site-logo" href="#">
-        <img class="logo" width="128" height="24" src="images/logo.svg" alt="Логотип Кэт энерджи.">
+        <img width="128" height="24" src="images/logo.svg" alt="Логотип Кэт энерджи.">
       </a>
       <section class="footer__social social">
         <div class="social__wrapper">
@@ -168,7 +167,7 @@
         </div>
       </section>
       <a class="footer__academy academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="academy-logo__text">Html Academy</span>
+        <span class="academy-logo__text">HTML Academy</span>
         <img class="academy-logo__image" width="27" height="34" src="images/htmlacademy.svg" alt="Логотип HTML Академии.">
       </a>
     </div>
