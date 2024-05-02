@@ -1,0 +1,18 @@
+.showing {
+  //comments
+}
+
+.showing__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.showing__description {
+  margin: 0;
+  font-family: $font-secondary;
+  font-size: 12px;
+  line-height: 16px;
+}

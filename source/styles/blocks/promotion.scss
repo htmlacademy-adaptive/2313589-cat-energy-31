@@ -1,0 +1,13 @@
+.promotion {
+  background-color: $color-primary;
+  background-image: url("../../images/catalog/promotion-cat@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.promotion__text {
+  margin: 0;
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
