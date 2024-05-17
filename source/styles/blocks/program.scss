@@ -1,5 +1,38 @@
 .program {
   background-color: $color-secondary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $color-primary;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &--slim::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#index_cat-slim-mobile");
+    background-size: 36px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 36px;
+    height: 50px;
+  }
+
+  &--pro::after {
+    background-image: url("../../icons/stack.svg#index_cat-pro-mobile");
+    background-size: 67px 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 67px;
+    height: 28px;
+  }
 }
 
 .program__title {
@@ -8,25 +41,6 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-
-  &::before {
-    content: "";
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  &--slim::before {
-    width: 50px;
-    height: 53px;
-    background-image: url("../../icons/index/cat-slim.svg");
-  }
-
-  &--pro::before {
-    width: 67px;
-    height: 50px;
-    background-image: url("../../icons/index/cat-pro.svg");
-  }
 }
 
 .program__description {
@@ -36,9 +50,37 @@
 }
 
 .program__link {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
   color: $text-primary;
   text-decoration: none;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#index_icon-arrow-24");
+    background-size: 24px 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 12px;
+  }
+
+  &:hover,
+  &:focus::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#index_icon-arrow-32");
+    background-size: 32px 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 12px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

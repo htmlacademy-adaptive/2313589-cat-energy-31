@@ -12,26 +12,49 @@
 
 .description__list {
   @include list-reset;
+  counter-reset: 0; /* Нужен ли тут сброс? */
 }
 
 .description__item {
-  background-repeat: no-repeat;
-  background-size: 60px 60px;
+  position: relative;
+  counter-increment: enumerator 1;
 
-  &--healthy {
-    background-image: url("../../img/healthy-icon.svg");
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $color-primary;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  &--simple {
-    background-image: url("../../img/simple-icon.svg");
+  &::after {
+    content: counter(enumerator);
+    position: absolute;
+    font-size: 280px;
+    color: $color-secondary;
+    z-index: -1;
   }
 
-  &--tasty {
-    background-image: url("../../img/tasty-icon.svg");
+  &--healthy::before {
+    background-image: url("../../icons/stack.svg#index_healthy-icon");
+    background-size: 25px 28px;
   }
 
-  &--fast {
-    background-image: url("../../img/fast-icon.svg");
+  &--simple::before {
+    background-image: url("../../icons/stack.svg#index_simple-icon");
+    background-size: 26px 29px;
+  }
+
+  &--tasty::before {
+    background-image: url("../../icons/stack.svg#index_tasty-icon");
+    background-size: 25px 30px;
+  }
+
+  &--fast::before {
+    background-image: url("../../icons/stack.svg#index_fast-icon");
+    background-size: 26px 31px;
   }
 }
 

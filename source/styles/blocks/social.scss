@@ -8,24 +8,44 @@
 
 .social__list {
   @include list-reset;
+  max-width: 132px;
+  margin: 0 auto;
 }
 
 .social__item {
-  //comments
+  position: relative;
 }
 
 .social__link {
-  //comments
-}
+  background-color: $color-social;
+  position: absolute;
+  width: 30px;
+  height: 20px;
 
-.social-link--vk {
-  //comments
-}
+  &--vk {
+    mask-image: url("../../icons/stack.svg#social_vkontakte");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.social-link--youtube {
-  //comments
-}
+  &--youtube {
+    mask-image: url("../../icons/stack.svg#social_youtube");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.social-link--telegram {
-  //comments
+  &--telegram {
+    mask-image: url("../../icons/stack.svg#social_telegram");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

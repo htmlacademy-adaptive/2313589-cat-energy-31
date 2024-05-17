@@ -8,8 +8,21 @@
   line-height: 20px;
   font-weight: 400;
   color: $text-secondary;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.academy-logo__image {
-  //comments
+.academy-logo__icon {
+  color: #666666;
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

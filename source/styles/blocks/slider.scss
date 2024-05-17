@@ -1,5 +1,5 @@
 .slider {
-  //comments
+  position: relative;
 }
 
 .slider__image {
@@ -8,5 +8,23 @@
 
 .slider__change-image {
   //comments
+}
+
+.slider__change-image-separator {
+  border: none;
+  background: none;
+  color: #666666;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-slider;
+    opacity: 0.6;
+  }
 }
 

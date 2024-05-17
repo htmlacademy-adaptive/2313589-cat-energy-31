@@ -1,0 +1,18 @@
+.footer-logo {
+  //comments
+}
+
+.footer-logo__text {
+  width: 128px;
+  height: 24px;
+  color: #111111;
+
+  &:hover,
+  &:focus {
+    color: #3e3e3e;
+  }
+
+  &:active {
+    opacity: #6b6b6b;
+  }
+}

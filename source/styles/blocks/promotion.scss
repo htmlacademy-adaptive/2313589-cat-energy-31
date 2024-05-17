@@ -2,10 +2,22 @@
   background-color: $color-primary;
   background-image: url("../../images/catalog/promotion-cat@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    background-image: url("../../icons/stack.svg#catalog_icon-gift-mibile");
+    background-repeat: no-repeat;
+  }
 }
 
 .promotion__text {
-  margin: 0;
+  margin: 0 auto;
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
