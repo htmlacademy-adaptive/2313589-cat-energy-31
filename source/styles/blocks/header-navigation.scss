@@ -1,7 +1,9 @@
-.header-navigation {
-  //comments
+.header {
+  //
 }
 
-.header-navigation__wrapper {
-  //comments
+.header__navigation {
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+  }
 }

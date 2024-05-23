@@ -9,6 +9,18 @@
     background-image: url("../../icons/stack.svg#catalog_icon-plus-30");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: $tablet) {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../../icons/stack.svg#catalog_icon-plus-60");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
   /* Как быть в таком случае, если размер <svg viewBox="0 0 30 30", а в версиях пл и дескт 60х60?
   Ответ: решается через медиа запрос для таблет и дескт */

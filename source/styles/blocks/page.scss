@@ -8,6 +8,15 @@
   margin: 0;
   background-color: #ffffff;
   color: $text-primary;
+
+  &--background {
+    @media (min-width: $desktop) {
+      background-image: url("../../images/index/hero-cat@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 720px 694px;
+    }
+  }
 }
 
 .page__content {

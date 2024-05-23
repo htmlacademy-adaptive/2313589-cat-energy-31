@@ -1,8 +1,24 @@
 .hero {
+  background-image:
+    url("../../images/index/hero-cat@1x.jpg"),
+    linear-gradient(#62a63b 302px, #ffffff 302px);
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: $color-primary;
   color: #ffffff;
-  background-image: url("../../images/index/hero-cat@1x.jpg");
-  background-repeat: no-repeat;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    background-color: #ffffff;
+    background-image: none;
+    color: $text-primary;
+  }
+
+  @media (min-width: $desktop) {
+    background: none;
+    color: $text-primary;
+    //на page бг-им
+  }
 }
 
 .hero__wrapper {

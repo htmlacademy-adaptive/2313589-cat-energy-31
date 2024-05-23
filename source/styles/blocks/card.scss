@@ -1,5 +1,7 @@
 .card {
-  //comments
+  @media (min-width: $tablet) {
+    background-color: $color-secondary;
+  }
 }
 
 .card__image-link {

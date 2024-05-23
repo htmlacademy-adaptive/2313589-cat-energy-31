@@ -1,3 +1,14 @@
 .cards {
   @include list-reset;
+  display: grid;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 141px 60px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 143px 80px;
+  }
 }

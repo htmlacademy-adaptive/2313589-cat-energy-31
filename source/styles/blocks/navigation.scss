@@ -1,16 +1,29 @@
 .navigation {
-  //comments
+  display: flex;
+  justify-content: space-between;
 }
 
 .navigation__toggle {
+  margin: 0;
+  padding: 0;
   background-image: url("../../icons/stack.svg#mobile_hamburger-button-mobile");
+  background-color: transparent;
   background-size: 24px;
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
   border: none;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .navigation__list {
-  //comments
+  @media (max-width: $mobile) {
+    position: absolute;
+    left: 0;
+    top: 65px;
+    width: 100%;
+  }
 }

@@ -1,5 +1,13 @@
 .example {
   background-color: #eaeaea;
+
+  @media (min-width: $tablet) {
+    background-image: linear-gradient(#ffffff 619px, #eaeaea 619px);
+  }
+
+  @media (min-width: $desktop) {
+    background-image: linear-gradient(#ffffff 135px, #eaeaea 135px);
+  }
 }
 
 .example__wrapper {

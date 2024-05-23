@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи: Каталог продукции</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
@@ -15,16 +16,16 @@
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo header-logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/logo/logo-picture-desctop.svg" width="70" height="59" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/logo/logo-picture-tablet.svg" width="60" height="50" type="image/svg+xml">
-        <img src="images/logo/logo-picture-mobile.svg" width="33" height="38" aria-hidden="true" alt="Логотип Кэт энерджи">
-      </picture>
-      <img class="header-logo__text" src="images/logo/logo-text-header.svg" width="101" height="18" alt="Логотип Кэт энерджи">
-      </img>
-    </a>
-    <nav class="header-navigation navigation">
+    <nav class="container navigation">
+      <a class="header__logo header-logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo/logo-picture-desctop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo/logo-picture-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img src="images/logo/logo-picture-mobile.svg" width="33" height="38" aria-hidden="true" alt="Логотип Кэт энерджи">
+        </picture>
+        <img class="header-logo__text" src="images/logo/logo-text-header.svg" width="101" height="18" alt="Логотип Кэт энерджи">
+        </img>
+      </a>
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
@@ -36,7 +37,7 @@
           <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="catalog.html" aria-current="page">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--bottom">
             <a class="site-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
@@ -45,7 +46,7 @@
   </header>
   <main class="page__content">
     <section class="catalog">
-      <div class="catalog__wrapper">
+      <div class="container">
         <h1 class="catalog__title title title--primary">Каталог продукции</h1>
         <ul class="catalog__list cards">
           <li class="catalog__item card">
@@ -307,7 +308,7 @@
       </div>
     </section>
     <section class="invite invite--secondary">
-      <div class="invite__wrapper">
+      <div class="invite__wrapper container">
         <h2 class="visually-hidden">Адрес магазина.</h2>
         <p class="invite__headline">Приглашаем к сотрудничеству дилеров!</p>
         <address class="invite__address">
@@ -322,7 +323,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__wrapper">
+    <div class="footer__wrapper container">
       <a class="footer__logo footer-logo" href="#" aria-label="Логотип Кэт Энерджи.">
         <svg class="footer-logo__text" width="128" height="24" aria-hidden="true">
           <use href="icons/stack.svg#logo_logo-text-footer"></use>

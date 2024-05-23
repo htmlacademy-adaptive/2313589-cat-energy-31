@@ -7,7 +7,9 @@
 }
 
 .invite__wrapper {
-  //comments
+  @media (min-width: $desktop) {
+    width: 565px;
+  }
 }
 
 .invite__headline {

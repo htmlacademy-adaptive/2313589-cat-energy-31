@@ -13,6 +13,17 @@
 .description__list {
   @include list-reset;
   counter-reset: 0; /* Нужен ли тут сброс? */
+  display: grid;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 58px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 81px;
+  }
 }
 
 .description__item {
