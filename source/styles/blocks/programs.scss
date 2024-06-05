@@ -1,0 +1,27 @@
+.programs__wrapper {
+  @media (min-width: $tablet) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 72px;
+    width: 1220px;
+  }
+}
+
+.programs__list {
+  @include list-reset;
+  display: grid;
+  gap: 20px;
+  padding: 5px 0;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+}

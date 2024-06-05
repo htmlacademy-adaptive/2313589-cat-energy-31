@@ -1,0 +1,124 @@
+.showing {
+  padding: 25px 0;
+  text-align: center;
+
+  @media (max-width: $mobile) {
+    position: relative;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../icons/stack.svg#catalog_icon-plus-30");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet) {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../../icons/stack.svg#catalog_icon-plus-60");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 37px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: #ebebeb;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    display: grid;
+    padding: 50px 37px 40px;
+    border: 2px solid $color-secondary;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 50px 37.5px 40px;
+  }
+}
+
+.showing__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    margin-bottom: 22px;
+    max-width: 134px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.showing__description {
+  margin: 0;
+  margin-bottom: 21px;
+  font-family: $font-secondary;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    margin-bottom: 82px;
+    max-width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 91px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.showing-link {
+  padding: 10px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    align-self: end;
+    padding: 10px 45px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 10px 39px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

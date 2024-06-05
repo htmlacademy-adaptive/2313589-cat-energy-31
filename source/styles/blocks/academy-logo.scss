@@ -1,0 +1,38 @@
+.academy-logo {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    gap: 23px;
+  }
+}
+
+.academy-logo__text {
+  font-family: $font-secondary;
+  font-size: 16px;               // 20px);
+  line-height: 20px;            //  25px);
+  font-weight: 400;
+  color: $text-secondary;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.academy-logo__icon {
+  width: 27px;
+  height: 34px;
+  color: #666666;
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

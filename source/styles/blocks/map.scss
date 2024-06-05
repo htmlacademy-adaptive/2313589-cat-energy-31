@@ -1,0 +1,14 @@
+.map {
+
+}
+
+.map__interactive {
+  height: 362px;
+  width: 100%;
+  vertical-align: middle;
+  border: none;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
+}

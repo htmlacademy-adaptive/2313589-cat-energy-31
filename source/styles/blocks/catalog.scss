@@ -1,0 +1,35 @@
+.catalog {
+  padding-top: 27px;
+
+  @media (min-width: $tablet) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 74px;
+  }
+}
+
+.catalog__wrapper {
+  @media (min-width: $tablet) {
+    margin-bottom: 73px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 69px;
+    padding: 0 70px;
+  }
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 166px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 167px;
+  }
+}

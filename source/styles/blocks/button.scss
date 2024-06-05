@@ -1,0 +1,52 @@
+.button {
+  display: grid;
+  place-content: center;
+  margin: 0;
+  padding: 10px 44px;
+  border: none;
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &--primary {
+    color: #ffffff;
+    background-color: $color-primary;
+
+    &:hover {
+      background-color: $color-slider;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $color-slider;
+    }
+  }
+
+  &--secondary {
+    color: $text-secondary;
+    background-color: $color-secondary;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+      background-color: $color-card;
+    }
+  }
+}
