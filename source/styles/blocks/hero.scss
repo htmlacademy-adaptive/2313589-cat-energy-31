@@ -4,10 +4,10 @@
   text-align: center;
   background-image:
     image-set(
-      url("../../images/index/hero-cat@2x.webp") type("image/webp") 2x,
-      url("../../images/index/hero-cat@1x.webp") type("image/webp") 1x,
-      url("../../images/index/hero-cat@2x.jpg") 2x,
-      url("../../images/index/hero-cat@1x.jpg") 1x),
+      url("../../images/index/hero-cat-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/index/hero-cat-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/index/hero-cat-mobile@2x.jpg") 2x,
+      url("../../images/index/hero-cat-mobile@1x.jpg") 1x),
     linear-gradient(90deg, #64a73d 50%, #62a53b 50%);
   background-repeat: no-repeat;
   background-position: top center;
@@ -26,14 +26,14 @@
     padding-top: 143px;
     background-image:
       image-set(
-        url("../../images/index/hero-cat@2x.webp") type("image/webp") 2x,
-        url("../../images/index/hero-cat@1x.webp") type("image/webp") 1x,
-        url("../../images/index/hero-cat@2x.jpg") 2x,
-        url("../../images/index/hero-cat@1x.jpg") 1x),
-      linear-gradient(90deg, #ffffff 50%, #63a63d 50%);
+        url("../../images/index/hero-cat-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/index/hero-cat-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/index/hero-cat-desktop@2x.jpg") 2x,
+        url("../../images/index/hero-cat-desktop@1x.jpg") 1x),;
+    //linear-gradient(90deg, #ffffff 50%, #63a63d 50%);
     background-repeat: no-repeat;
     background-position: bottom right, 100%;
-    background-size: min(72rem, 50%, 908px), 100%;
+    background-size: 50% 100%;
   }
 }
 
