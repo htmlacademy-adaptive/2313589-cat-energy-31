@@ -8,12 +8,12 @@
 @import "./blocks/academy-logo.scss";
 @import "./blocks/button.scss";
 @import "./blocks/container.scss";
+@import "./blocks/invite.scss";
 @import "./blocks/page.scss";
-@import "./blocks/site-logo.scss";
 @import "./blocks/title.scss";
+@import "./blocks/title-line.scss";
 //Header
-@import "./blocks/header.scss";
-@import "./blocks/header-navigation.scss";
+@import "./blocks/header-logo.scss";
 @import "./blocks/navigation.scss";
 @import "./blocks/site-list.scss";
 //Index
@@ -23,7 +23,6 @@
 @import "./blocks/description.scss";
 @import "./blocks/example.scss";
 @import "./blocks/slider.scss";
-@import "./blocks/invite.scss";
 //Catalog
 @import "./blocks/catalog.scss";
 @import "./blocks/cards.scss";
@@ -38,4 +37,6 @@
 @import "./blocks/footer.scss";
 @import "./blocks/footer-logo.scss";
 @import "./blocks/social.scss";
+//Map
+@import "blocks/map.scss";
 

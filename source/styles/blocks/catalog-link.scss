@@ -1,3 +1,22 @@
 .catalog-link {
-  //comments
+  width: 100%;
+  margin-top: 17px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  grid-column: 1 / -1;
+
+  @media (min-width: $tablet) {
+    margin-top: 32px;
+    padding: 10px 45px;
+    font-size: 16px;
+    line-height: 20px;
+    align-self: end;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 35px;
+    padding: 10px 45px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

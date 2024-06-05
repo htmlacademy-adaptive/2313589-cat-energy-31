@@ -1,0 +1,44 @@
+.title-line {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    top: 11px;
+    left: 55%;
+    background-color: $color-primary;
+    transform: translateX(-50%);
+    z-index: -1;
+
+    @media (min-width: $tablet) {
+      width: calc(100% + 60px);
+      top: 13px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 100vw;
+      top: 18px;
+    }
+  }
+
+  &--short::after {
+    @media (min-width: $tablet) {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 2px;
+      top: 13px;
+      right: 0;
+      background-color: $color-primary;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop) {
+      transform: translateX(-70%);
+      top: 18px;
+    }
+  }
+}

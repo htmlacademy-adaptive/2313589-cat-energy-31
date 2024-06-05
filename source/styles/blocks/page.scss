@@ -1,24 +1,54 @@
 .page {
   font-family: $font-primary;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: calc(100vw / 320 * 10);
+
+  @media (min-width: $tablet) {
+    font-size: calc(100vw / 768 * 10);
+  }
+
+  @media (min-width: $desktop) {
+    font-size: calc(100vw / 1440 * 10);
+  }
 }
 
 .page__body {
   margin: 0;
   background-color: #ffffff;
   color: $text-primary;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
 
-  &--background {
-    @media (min-width: $desktop) {
-      background-image: url("../../images/index/hero-cat@2x.jpg");
-      background-repeat: no-repeat;
-      background-position: top right;
-      background-size: 720px 694px;
-    }
+.page__background-wrapper {
+  min-width: 100%;
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+.page__header {
+  @media (min-width: $desktop) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
   }
 }
 
 .page__content {
-  //comments
+  min-width: 100%;
+
+  &--background {
+    @media (min-width: $desktop) {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+    }
+  }
+}
+
+.page__hero {
+  max-width: 2200px;
+  margin: 0 auto;
 }

@@ -1,23 +1,148 @@
 .subscribe {
-  //comments
-}
+  padding: 24px 0 40px;
 
-.subscribe__wrapper {
-  //comments
+  @media (min-width: $tablet) {
+    padding: 0;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 70px;
+    padding-bottom: 102px;
+  }
 }
 
 .subscribe__title {
-  //comments
+  margin: 0;
+  max-width: fit-content;
+  margin-left: -20px;
+  margin-bottom: 33px;
+  padding: 0 40px 0 20px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet) {
+    margin-left: 0;
+    margin-bottom: 65px;
+    padding: 0 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: -40px;
+    margin-bottom: 73px;
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .subscribe__description {
-  //comments
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    width: 632px;
+    padding-left: 76px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 950px;
+    padding-left: 270px;
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .subscribe__form {
-  //comments
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    width: 632px;
+    padding-top: 25px;
+    padding-left: 75px;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 752px;
+    padding-left: 590px;
+  }
+}
+
+.subscribe__field {
+  width: 280px;
+  font-family: $font-primary;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 12px;
+  border: 1px solid #e7e7e7;
+  transition: border-color, border 0.3s;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid $text-secondary;
+  }
+
+  &:user-invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &::placeholder {
+    color: $text-secondary;
+  }
+
+  @media (min-width: $tablet) {
+    min-width: 376px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 496px;
+    flex-grow: 1;
+  }
 }
 
 .subscribe__button {
-  //comments
+  padding: 12px;
+  width: 280px;
+  height: 56px;
+  font-size: 20px;
+  line-height: 26px;
+  border: none;
+
+  @media (min-width: $tablet) {
+    width: 256px;
+    height: 56px;
+    padding: 0 70px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 256px;
+    height: 56px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }

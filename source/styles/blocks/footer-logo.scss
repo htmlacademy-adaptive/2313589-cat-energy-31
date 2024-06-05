@@ -1,10 +1,11 @@
 .footer-logo {
-  //comments
+  display: grid;
+  place-content: center;
 }
 
 .footer-logo__text {
   width: 128px;
-  height: 24px;
+  height: auto;
   color: #111111;
 
   &:hover,

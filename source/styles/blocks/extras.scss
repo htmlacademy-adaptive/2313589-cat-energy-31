@@ -1,24 +1,87 @@
 .extras {
   @include list-reset;
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 70px;
+  }
 }
 
 .extras__item {
-  //comments
+  padding: 13px 0 19px;
+  border-top: 1px solid #cdcdcd;
+  display: grid;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 26px 38px 28px;
+    grid-template-columns: repeat(2, 1fr);
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop) {
+    align-items: center;
+    padding: 14px 0 17px;
+    grid-template-columns: 325px 326px auto;
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .extras__caption {
   margin: 0;
+  margin-bottom: 12px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    grid-column: 1 / 2;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extras__features {
   margin: 0;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 14px;
   color: $text-secondary;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    text-align: end;
+    font-size: 16px;
+    line-height: 20px;
+    display: grid;
+    grid-column: 2 / -1;
+    grid-template-columns: calc(202 * 100% / 287) calc(74 * 100% / 287);
+    justify-items: end;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 7px;
+    text-align: left;
+    grid-column: 2 / 3;
+    grid-template-columns: calc(202 * 100% / 287) calc(74 * 100% / 287);
+    justify-items: start;
+  }
 }
 
 .extras__value {
@@ -27,4 +90,21 @@
 
 .extras__price {
   margin: 0;
+}
+
+.extras__link {
+  padding: 10px;
+
+  @media (min-width: $tablet) {
+    margin-top: 24px;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 16px;
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
+    grid-column: 3 / -1;
+  }
 }

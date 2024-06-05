@@ -1,26 +1,28 @@
-.social {
-  //comments
-}
-
-.social__wrapper {
-  //comments
-}
-
 .social__list {
   @include list-reset;
-  max-width: 132px;
   margin: 0 auto;
-}
+  max-width: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
 
-.social__item {
-  position: relative;
+  @media (min-width: $tablet) {
+    padding-top: 2px;
+    padding-left: 37px;
+    gap: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 33px;
+  }
 }
 
 .social__link {
+  width: 28px;
+  height: 22px;
   background-color: $color-social;
-  position: absolute;
-  width: 30px;
-  height: 20px;
+  display: flex;
 
   &--vk {
     mask-image: url("../../icons/stack.svg#social_vkontakte");

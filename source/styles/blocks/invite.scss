@@ -1,29 +1,78 @@
 .invite {
-  //comments
-}
+  position: relative;
 
-.invite--secondary {
-  background-color: $color-secondary;
+  &--secondary {
+    background-color: $color-secondary;
+  }
 }
 
 .invite__wrapper {
+  padding: 27px 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    padding: 61px 40px;
+    gap: 0;
+  }
+
   @media (min-width: $desktop) {
+    position: absolute;
+    padding: 61px 75px 60px 80px;
     width: 565px;
+    top: 95px;
+    align-items: start;
+    gap: 10px;
+    background-color: #ffffff;
+    z-index: 1;
   }
 }
 
 .invite__headline {
   margin: 0;
+  max-width: 130px;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: #111111;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    max-width: 165px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .invite__address {
+  max-width: 140px;
   font-family: $font-secondary;
+  font-size: 14px;
   line-height: 20px;
   font-style: normal;
+
+  @media (min-width: $tablet) {
+    max-width: 160px;
+    display: grid;
+    gap: 2rem;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 18px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .invite__text {
@@ -31,5 +80,31 @@
 }
 
 .invite__map {
-  //comments
+  display: block;
+  width: 100%;
+  height: 362px;
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
+
+  &--nojs {
+    display: none;
+  }
+}
+
+.invite__map-image {
+  display: none;
+  width: 100%;
+  height: 362px;
+  object-fit: cover;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
+
+  &--nojs {
+    display: block;
+  }
 }

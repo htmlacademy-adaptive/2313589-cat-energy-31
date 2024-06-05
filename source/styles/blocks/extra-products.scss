@@ -1,18 +1,61 @@
 .extra-products {
-  //comments
+  padding: 24px 0 15px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    padding-bottom: 79px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 70px 25px;
+  }
 }
 
 .extra-products__wrapper {
-  //comments
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 895px auto;
+    gap: 30px 80px;
+    grid-auto-flow: dense;
+  }
 }
 
 .extra-products__title {
   margin: 0;
+  max-width: fit-content;
+  margin-left: -20px;
+  margin-bottom: 36px;
+  padding: 0 40px 0 20px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet) {
+    margin-left: 0;
+    margin-bottom: 79px;
+    padding: 0 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: -40px;
+    margin-bottom: 80px;
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .extra-products__list {
-  //comments
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    grid-column: 1 / 2;
+  }
 }

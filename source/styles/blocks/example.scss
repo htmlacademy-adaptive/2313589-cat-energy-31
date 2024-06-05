@@ -1,46 +1,126 @@
 .example {
   background-color: #eaeaea;
+  position: relative;
+  padding: 25px 0 40px;
 
   @media (min-width: $tablet) {
-    background-image: linear-gradient(#ffffff 619px, #eaeaea 619px);
+    padding: 45px 0 101px;
+    background-image: linear-gradient(to top, #eaeaea 461px, #ffffff 461px);
   }
 
   @media (min-width: $desktop) {
-    background-image: linear-gradient(#ffffff 135px, #eaeaea 135px);
+    padding: 0;
+    padding-bottom: 75px;
+    background-image: linear-gradient(to bottom, #ffffff 136px, $color-secondary 136px);
   }
 }
 
 .example__wrapper {
-  //comments
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-auto-flow: dense;
+    width: 1220px;
+  }
 }
 
 .example__title {
   margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 1 / 2;
+    margin-bottom: 146px;
+  }
 }
 
 .example__text {
   margin: 0;
+  margin-bottom: 20px;
   font-family: $font-secondary;
   color: $text-secondary;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 1 / 2;
+    max-width: 433px;
+    margin-bottom: 69px;
+  }
 }
 
 .example__list {
   margin: 0;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px 32px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 162px 1fr;
+    gap: 43px;
+    margin-bottom: 102px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+    grid-column: 2 / 1;
+    gap: 60px 42px;
+    max-width: 366px;
+  }
 }
 
 .example__item {
-  //comments
-}
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 14px 10px 7px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
 
-.example__item--line {
-  text-transform: uppercase;
+  @media (min-width: $tablet) {
+    padding-bottom: 9px;
+    width: 162px;
 
-  & .example__description,
-  & .example__amount {
-    font-family: $font-primary;
-    font-size: 14px;
-    line-height: 20px;
-    color: $text-primary;
+    &--line {
+      width: 174px;
+    }
+  }
+
+  &--line {
+    padding: 0;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3px;
+    border: none;
+
+    @media (min-width: $tablet) {
+      grid-column: 3 / -1;
+      flex-direction: column;
+      align-items: end;
+      gap: 10px;
+      text-align: right;
+    }
+
+    @media (min-width: $desktop) {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      gap: 66px;
+      justify-content: start;
+      width: 327px;
+    }
   }
 }
 
@@ -49,12 +129,90 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__description {
+  max-width: 77px;
+  margin-top: 7px;
+  margin-bottom: -22px;
+  padding: 0 5px;
   font-family: $font-secondary;
   font-size: 12px;
   line-height: 12px;
+  text-transform: lowercase;
   color: $text-secondary;
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet) {
+    max-width: 200px;
+    margin-top: 11px;
+    margin-bottom: -15px;
+    padding: 0 7px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $color-secondary;
+  }
 }
 
+.example__item--line .example__amount,
+.example__item--line .example__description {
+  max-width: 122px;
+  margin: 0;
+  padding: 0;
+  font-family: $font-primary;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-primary;
+  text-transform: uppercase;
+  transform: none;
+
+  @media (min-width: $tablet) {
+    max-width: 200px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+  }
+}
+
+.example__slider {
+  @media (max-width: $mobile) {
+    margin: 0 auto;
+    width: 280px;
+    height: 256px;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    width: 560px;
+    height: 512px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    width: 560px;
+    height: 512px;
+    grid-column: 2 / 3;
+    grid-row: span 4;
+    place-self: start end;
+  }
+}

@@ -1,12 +1,12 @@
 .container {
-  width: 280px;
+  width: calc(100% - 40px);
   margin: 0 auto;
 
   @media (min-width: $tablet) {
-    width: 704px; //или с запасом брать?
+    width: calc(100% - 60px);
   }
 
   @media (min-width: $desktop) {
-    width: 1220px;
+    width: calc(100% - 80px);
   }
 }

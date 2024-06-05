@@ -3,23 +3,60 @@
 }
 
 .footer__wrapper {
+  padding: 40px 0;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  gap: 10px;
 
   @media (min-width: $tablet) {
+    padding: 52px 0;
     flex-direction: row;
     justify-content: space-between;
+    // grid-auto-flow: row dense;
+    // grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 67px 0;
+    width: 1220px;
   }
 }
 
 .footer__logo {
-  //comments
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet) {
+    padding: 5px 0;
+    border: none;
+    justify-self: start;
+    grid-column: 1 / 2;
+  }
 }
 
 .footer__social {
-  //comments
+  margin-bottom: 10px;
+  padding: 11px 0 18px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 7px 0;
+    max-width: 180px;
+    grid-column: 2 / 3;
+    border: none;
+  }
 }
 
 .footer__academy {
-  //comments
+  @media (max-width: $mobile) {
+    margin: 0 auto;
+    width: 280px;
+  }
+
+  @media (min-width: $tablet) {
+    justify-self: end;
+    grid-column: 3 / -1;
+  }
 }
