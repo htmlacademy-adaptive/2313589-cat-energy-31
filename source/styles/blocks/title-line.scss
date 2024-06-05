@@ -1,5 +1,6 @@
 .title-line {
   position: relative;
+  overflow-x: hidden;
 
   &::before {
     content: "";
@@ -7,7 +8,7 @@
     width: 100vw;
     height: 2px;
     top: 11px;
-    left: 55%;
+    left: 50%;
     background-color: $color-primary;
     transform: translateX(-50%);
     z-index: -1;
