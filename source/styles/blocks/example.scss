@@ -1,10 +1,10 @@
 .example {
   background-color: #eaeaea;
   position: relative;
-  padding: 25px 0 40px;
+  padding: 25px 0 38px;
 
   @media (min-width: $tablet) {
-    padding: 45px 0 101px;
+    padding: 45px 0 102px;
     background-image: linear-gradient(to top, #eaeaea 461px, #ffffff 461px);
   }
 
@@ -195,11 +195,12 @@
 }
 
 .example__slider {
-  @media (max-width: $mobile) {
+  @media (min-width: $mobile) {
     margin: 0 auto;
     width: 280px;
     height: 256px;
   }
+
 
   @media (min-width: $tablet) {
     margin: 0 auto;

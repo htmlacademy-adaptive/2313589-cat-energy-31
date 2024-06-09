@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 69px 1fr;
   align-items: start;
-  padding: 21px 22px 15px;
+  padding: 21px 20px 18px;
   background-color: $color-secondary;
   position: relative;
 
@@ -93,7 +93,7 @@
     @media (min-width: $desktop) {
       width: 70px;
       height: 100px;
-      left: 65px;
+      left: 67px;
       top: 40px;
       background-image: url("../../icons/stack.svg#index_cat-slim-desktop");
     }
@@ -136,7 +136,7 @@
 
 .program__title {
   margin: 0;
-  padding-top: 8px;
+  padding-top: 7px;
   grid-column: 2 / -1;
   font-size: 24px;
   line-height: 37px;
@@ -162,7 +162,7 @@
 
 .program__description {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   padding-top: 30px;
   grid-column: 1 / -1;
   font-family: $font-secondary;
@@ -192,7 +192,7 @@
 
 .program__link {
   padding: 4px 0;
-  padding-top: 18px;
+  padding-top: 19px;
   grid-column: 1 / -1;
   display: flex;
   gap: 15px;
