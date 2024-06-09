@@ -1,9 +1,9 @@
 .social__list {
   @include list-reset;
   margin: 0 auto;
-  max-width: 32px;
+  max-width: 180px;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   gap: 24px;
 
@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding-left: 33px;
+    padding-left: 35px;
   }
 }
 
@@ -22,7 +22,7 @@
   width: 28px;
   height: 22px;
   background-color: $color-social;
-  display: flex;
+  display: block;
 
   &--vk {
     mask-image: url("../../icons/stack.svg#social_vkontakte");

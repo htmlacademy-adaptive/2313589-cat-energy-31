@@ -1,6 +1,6 @@
 .title-line {
   position: relative;
-  overflow-x: hidden;
+  width: fit-content;
 
   &::before {
     content: "";
@@ -8,38 +8,42 @@
     width: 100vw;
     height: 2px;
     top: 11px;
-    left: 50%;
+    left: calc(((100vw - 280px) / 2) * -1);
     background-color: $color-primary;
-    transform: translateX(-50%);
-    z-index: -1;
+    z-index: -2;
 
     @media (min-width: $tablet) {
-      width: calc(100% + 60px);
-      top: 13px;
+      //top: 13px;
+      left: calc(((100vw - 708px) / 2) * -1);
     }
 
     @media (min-width: $desktop) {
-      width: 100vw;
-      top: 18px;
+      top: 17px;
+      left: calc(((100vw - 1220px) / 2) * -1);
     }
   }
 
-  &--short::after {
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 80px);
+    height: 2px;
+    top: 11px;
+    left: -40px;
+    display: block;
+    background-color: #ffffff;
+    z-index: -1;
+
     @media (min-width: $tablet) {
-      content: "";
-      position: absolute;
-      width: 100vw;
-      height: 2px;
-      top: 13px;
-      right: 0;
-      background-color: $color-primary;
-      transform: translateX(-50%);
-      z-index: -1;
+      width: calc(100% + 40px);
+      //top: 14px;
+      left: 0;
     }
 
     @media (min-width: $desktop) {
-      transform: translateX(-70%);
-      top: 18px;
+      width: calc(100% + 80px);
+      //top: 20px;
+      left: -40px;
     }
   }
 }

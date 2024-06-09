@@ -1,8 +1,40 @@
+.map {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 57px;
+    height: 53px;
+    top: 139px;
+    right: 129px;
+    background-image: url("../../images/map/mobile-map-pin.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @media (min-width: $tablet) {
+      width: 113px;
+      height: 106px;
+      top: 146px;
+      right: 322px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url("../../images/map/desktop-tablet-map-pin.svg");
+    }
+
+    @media (min-width: $desktop) {
+      top: 130px;
+      right: 420px;
+    }
+  }
+}
+
 .map__interactive {
   height: 362px;
   width: 100%;
-  vertical-align: middle;
   border: none;
+  position: relative;
+  z-index: -1;
 
   @media (min-width: $tablet) {
     height: 400px;
